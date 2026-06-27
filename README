@@ -1,0 +1,217 @@
+POP — Prompt Oriented Programming
+
+«Maintain intent. Derive implementation.»
+
+Modern AI agents are remarkably capable of writing software from natural language.
+
+Yet we still maintain code as the primary representation of our systems.
+
+POP asks a simple question:
+
+«Why?»
+
+If intelligent implementers can reliably derive code from a well-written specification, perhaps the specification—not the implementation—should become the software's source of truth.
+
+POP is a methodology for doing exactly that.
+
+---
+
+The Core Idea
+
+Traditional software development treats code as the authoritative description of a system.
+
+Documentation exists to explain the code.
+
+POP inverts that relationship.
+
+Software intent is written directly as a collection of human-readable documents.
+
+Implementation becomes a derived artifact.
+
+Just as a compiler translates source code into machine code, an intelligent implementer translates software intent into implementation.
+
+When the software changes, the intent changes first.
+
+The implementation follows.
+
+---
+
+Why?
+
+Code is an excellent language for computers.
+
+It is a surprisingly poor language for communicating intent.
+
+Understanding an existing codebase often requires reconstructing decisions that were never explicitly recorded.
+
+Why is this service using Redis?
+
+Why does this mechanic work this way?
+
+Was this architecture intentional, or merely convenient?
+
+POP encourages these decisions to be communicated directly instead of inferred from implementation.
+
+The objective is not to remove implementation.
+
+The objective is to stop treating implementation as the authoritative expression of design.
+
+---
+
+What POP Produces
+
+A POP project consists of small, focused documents.
+
+Each document owns a single area of software intent.
+
+Together they form the project's authoritative knowledge base.
+
+These documents are intentionally concise.
+
+They communicate:
+
+- what the software should do
+- what has not yet been decided
+- what implementation restrictions exist
+- why those restrictions exist
+- which document owns each concept
+
+They deliberately avoid implementation unless implementation itself is part of the intended software.
+
+---
+
+The Methodology
+
+POP treats software development as the progressive stabilization and evolution of intent.
+
+Every change follows the same cycle:
+
+1. Evolve the programmer's intent.
+2. Verify that independent implementers would preserve the same meaning.
+3. Verify that every product decision has an explicit intent state.
+4. Verify that implementation restrictions preserve their reasoning.
+5. Preserve readability and semantic density.
+6. Revise until the remaining findings have been consciously acknowledged.
+
+Only then is implementation produced.
+
+---
+
+Findings
+
+POP does not produce errors.
+
+It produces findings.
+
+A finding is simply an observation that requires programmer attention.
+
+The programmer may:
+
+- resolve it
+- defer it
+- reference another document
+- reject it
+
+The objective is not the absence of findings.
+
+The objective is the absence of unacknowledged findings.
+
+---
+
+Knowledge Ownership
+
+Every important concept should have one authoritative home.
+
+Documents reference one another instead of duplicating knowledge.
+
+This keeps software understandable as it grows.
+
+When concepts evolve, dependent documents evolve with them.
+
+POP treats concept evolution much like traditional software engineering treats API evolution.
+
+---
+
+Working With AI
+
+POP is designed for collaboration between programmers and intelligent implementers.
+
+The implementer is expected to:
+
+- preserve programmer intent
+- ask questions only when product decisions remain unstable
+- freely choose implementation where intent allows
+- treat implementation as disposable
+- treat POP documents as the project's source code
+
+Implementation may be rebuilt repeatedly.
+
+The POP knowledge base persists.
+
+---
+
+Scope
+
+POP intentionally concerns itself with one thing:
+
+Communicating software intent.
+
+It does not attempt to replace every engineering artifact.
+
+Architecture diagrams, balance spreadsheets, API specifications, performance reports, and other technical artifacts remain valuable.
+
+POP integrates with them.
+
+It does not seek to replace them.
+
+---
+
+Operating Profiles
+
+POP can be adopted in different ways.
+
+POP Native
+
+POP documents are the project's source of truth.
+
+Implementation is entirely derived from them.
+
+POP Embedded
+
+POP owns only the software intent explicitly assigned to it.
+
+Existing project artifacts continue to own everything else.
+
+POP integrates into existing projects without requiring a rewrite.
+
+---
+
+Manifest
+
+«Intent is written directly as documentation.
+
+Implementation is derived from it.
+
+An idea is stable when different people understand it the same way.
+
+A specification is stable when different implementations preserve the same meaning.
+
+Humans and machines both reason better about complete things.
+
+Instead of complaining about syntax, POP complains about missing ideas and unclear meaning.
+
+Software is a collaboration between the programmer and their compiler.
+
+Programming is the progressive stabilization and evolution of intent.»
+
+---
+
+POP is not a programming language.
+
+It is not a code generator.
+
+It is not another documentation format.
+
+It is a methodology for making software intent the primary artifact of software development.
+
+Everything else follows.
