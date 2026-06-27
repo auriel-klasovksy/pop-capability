@@ -75,6 +75,20 @@ If not, no finding.
 
 ---
 
+Knowledge Stability
+
+Intent extends beyond individual documents.
+
+When auditing a document, consider referenced POP documents where necessary to verify that shared concepts preserve the same meaning.
+
+Terminology may change.
+
+Meaning must not.
+
+Produce findings when concept evolution has introduced inconsistent understanding across the POP knowledge base.
+
+---
+
 Findings
 
 Produce findings only when stable intent cannot be inferred.
