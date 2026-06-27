@@ -20,6 +20,8 @@ Intent is written directly as documentation. Implementation is derived from it.
 
 An idea is stable when different people understand it the same way. A specification is stable when different implementations preserve the same meaning.
 
+Editing code without specification is like editing the assembly output of compilation. 
+
 Humans and machines both reason better about complete things.
 
 Instead of complaining about syntax, POP complains about missing ideas and unclear meaning.
@@ -120,6 +122,29 @@ It is an explicit acknowledgment that the concept is owned elsewhere.
 Documents should strive to be locally complete while remaining globally coherent.
 
 Every idea should have one home.
+
+---
+
+Concept Identity
+
+A concept has an identity independent of the words used to describe it.
+
+A rename changes the preferred name of a concept, not the concept itself.
+
+A concept may evolve over time. Common forms of evolution include:
+
+- rename
+- split
+- merge
+- expansion
+- removal
+- ownership transfer
+
+When evolving a POP document, reason about concepts rather than words.
+
+A change to a concept may require revisiting every document that depends upon that concept.
+
+Knowledge stability requires preserving concept identity across the entire POP knowledge base.
 
 ---
 
