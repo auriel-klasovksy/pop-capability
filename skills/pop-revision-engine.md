@@ -65,6 +65,8 @@ Avoid restructuring the document unless it meaningfully improves communication.
 
 Do not rewrite paragraphs simply because you can write them differently.
 
+Philosophy findings may justify structural changes that would otherwise violate the principle of minimal revision.
+
 ---
 
 Preserve Voice
@@ -101,6 +103,20 @@ References
 When information already exists elsewhere, prefer referencing the authoritative POP document rather than duplicating its contents.
 
 Respect knowledge ownership.
+
+---
+
+Knowledge Stability
+
+Revision is not limited to the current document.
+
+When findings reveal that a concept has evolved, determine whether other POP documents now require corresponding revisions.
+
+Maintain knowledge stability across the POP knowledge base.
+
+Do not duplicate changes unnecessarily.
+
+Update dependent documents only when the programmer's intended meaning has changed.
 
 ---
 
