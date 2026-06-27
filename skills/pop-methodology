@@ -1,0 +1,157 @@
+POP Methodology
+
+The POP methodology describes how software intent evolves from an idea into a stable specification.
+
+It is a collaborative process between the programmer and POP.
+
+Its purpose is not to eliminate uncertainty.
+
+Its purpose is to ensure that uncertainty is communicated consciously.
+
+---
+
+Artifact Declaration
+
+Every POP document begins by declaring itself.
+
+Example:
+
+Type: POP Intent
+
+This declaration identifies the document as part of the POP methodology.
+
+POP does not attempt to replace every engineering artifact.
+
+When another artifact is better suited for a particular kind of knowledge, POP should reference it rather than absorb it.
+
+---
+
+The Evolution Loop
+
+Software evolves through repeated refinement.
+
+Each iteration consists of the following stages.
+
+1. Intent Evolution
+
+The Intent Evolver collaborates with the programmer to create or modify a POP document.
+
+The input may be:
+
+- a conversation
+- a requested change
+- an existing POP document
+- an empty document
+
+The output is a revised POP document representing the programmer's current intent.
+
+---
+
+2. Stability Audit
+
+The Stability Auditor determines whether independent implementers would preserve the same intended software.
+
+Material instability produces findings.
+
+---
+
+3. Intent State Audit
+
+The Intent State Auditor verifies that every product decision is clearly communicated as:
+
+- defined
+- referenced
+- deferred
+- unknown
+
+Unknown product decisions produce findings.
+
+---
+
+4. Commitment Audit
+
+The Commitment Auditor verifies that implementation restrictions preserve the programmer's reasoning.
+
+Unexplained implementation restrictions produce findings.
+
+---
+
+5. Philosophy Review
+
+The Philosophy Guardian verifies that the document remains readable, concise, and faithful to the philosophy of POP.
+
+Only significant philosophical drift should produce findings.
+
+---
+
+6. Revision
+
+The Revision Engine consumes the document together with the findings and produces an improved revision.
+
+Revision should preserve intent while improving communication.
+
+---
+
+Programmer Collaboration
+
+POP should resolve findings autonomously whenever the programmer's intent can be preserved confidently.
+
+When a finding represents a genuine product decision, POP should involve the programmer.
+
+Questions should be:
+
+- minimal
+- specific
+- motivated by findings
+
+POP should never ask implementation questions unless the programmer explicitly wishes to communicate implementation intent.
+
+---
+
+Convergence
+
+Each iteration should reduce the number or severity of unresolved findings.
+
+The objective is not necessarily zero findings.
+
+The objective is that every remaining finding has been consciously acknowledged by the programmer.
+
+Possible outcomes for a finding include:
+
+- resolved
+- referenced
+- deferred
+- rejected
+
+Once every remaining finding has been intentionally acknowledged, the document is considered stable.
+
+---
+
+Completion
+
+A POP document is complete when:
+
+- programmer intent has been faithfully communicated
+- independent implementers would preserve the same meaning
+- implementation restrictions preserve their reasoning
+- uncertainty has an explicit intent state
+- the document remains concise and pleasant to read
+- remaining findings are consciously acknowledged
+
+Completion is not perfection.
+
+Completion is shared understanding.
+
+---
+
+Implementation
+
+The resulting POP document becomes the authoritative description of the software's intent.
+
+Implementation is derived from the document.
+
+Code should not become the authoritative source of behavior.
+
+When software changes, the POP document should evolve first.
+
+Implementation follows.
