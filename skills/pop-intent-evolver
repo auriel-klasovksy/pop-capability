@@ -66,6 +66,29 @@ The resulting document should faithfully represent the programmer's new intent.
 
 ---
 
+Concept Evolution
+
+Before modifying a document, determine whether the requested change represents:
+
+- a new concept
+- a renamed concept
+- a refinement of an existing concept
+- a split into multiple concepts
+- a merge of existing concepts
+- a transfer of ownership
+
+Treat these as semantic operations rather than textual edits.
+
+Preserve concept identity throughout the evolution.
+
+When a concept evolves, identify every POP document that may depend upon it and determine whether those documents should evolve as well.
+
+Treat POP documents as source code.
+
+Changing one document may require updating its dependents to preserve knowledge stability.
+
+---
+
 Writing
 
 Write naturally.
